@@ -42,7 +42,7 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0
       react-dom:
-        specifier: latest
+        specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
       react-icons:
         specifier: ^5.5.0
