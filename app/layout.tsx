@@ -5,7 +5,7 @@ import { Inter, Great_Vibes } from 'next/font/google';
 import { Metadata } from 'next';
 import './globals.css';
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
@@ -72,7 +72,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans bg-rose-50 text-rose-900 antialiased min-h-screen flex flex-col">
         {children}
-        
+
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

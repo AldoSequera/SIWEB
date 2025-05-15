@@ -58,9 +58,9 @@ export default function AdminDashboard() {
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{order.date}</td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full 
-                      ${order.status === 'Delivered' ? 'bg-green-100 text-green-800' : 
-                        order.status === 'Shipped' ? 'bg-blue-100 text-blue-800' : 
-                        'bg-yellow-100 text-yellow-800'}`}>
+                      ${order.status === 'Delivered' ? 'bg-green-100 text-green-800' :
+                        order.status === 'Shipped' ? 'bg-blue-100 text-blue-800' :
+                          'bg-yellow-100 text-yellow-800'}`}>
                       {order.status}
                     </span>
                   </td>

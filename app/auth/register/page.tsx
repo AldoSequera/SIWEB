@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation'; 
+import { useRouter } from 'next/navigation';
 import RomanticButton from '@/components/ui/RomanticButton';
 import LoveInput from '@/components/ui/LoveInput';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
@@ -10,12 +10,12 @@ export default function RegisterPage() {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
   const [isClient, setIsClient] = useState(false);
-  const router = useRouter(); 
+  const router = useRouter();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     alert('Register telah dikirimkan!');
-    const userRole = 'admin'; 
+    const userRole = 'admin';
     router.push(userRole === 'admin' ? '#' : '#');
   };
 
@@ -23,7 +23,7 @@ export default function RegisterPage() {
   const toggleConfirmPasswordVisibility = () => setConfirmPasswordVisible(!confirmPasswordVisible);
 
   useEffect(() => {
-    setIsClient(true); 
+    setIsClient(true);
   }, []);
 
   if (!isClient) {

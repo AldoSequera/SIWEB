@@ -21,13 +21,13 @@ const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <RomanticNavbar />
-      
+
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="relative h-[80vh] min-h-[500px] overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-rose-500 to-pink-600 opacity-90"></div>
           <div className="absolute inset-0 bg-[url('/images/heart-pattern.svg')] bg-repeat opacity-10"></div>
-          
+
           <div className="relative h-full container mx-auto px-4 flex items-center justify-center">
             <div className="text-center max-w-3xl">
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-romantic">
@@ -103,7 +103,7 @@ const HomePage: React.FC = () => {
               Pesan kue romantis Anda hari ini dan buat kenangan manis yang tak terlupakan
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/main/products"> 
+              <Link href="/main/products">
                 <RomanticButton size="lg" variant="outline" icon="heart">
                   Pesan Sekarang
                 </RomanticButton>

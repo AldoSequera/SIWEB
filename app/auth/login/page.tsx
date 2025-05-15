@@ -24,7 +24,7 @@ export default function LoginPage() {
     // User credentials
     else if (username === 'user123' && password === '12345') {
       router.push('/main/home'); // Redirect to User Dashboard
-    } 
+    }
     // Invalid credentials
     else {
       setError('Username atau Password tidak valid!!');
@@ -62,9 +62,9 @@ export default function LoginPage() {
               required
               className="w-full rounded-lg border-2 border-rose-300 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-rose-400"  // Rounded corners and border focus
             />
-            <button 
-              type="button" 
-              onClick={() => setShowPassword(!showPassword)} 
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
               className="absolute right-3 top-11 transform -translate-y-1/2 text-rose-500"
             >
               {showPassword ? <FaEye size={20} /> : <FaEyeSlash size={20} />}

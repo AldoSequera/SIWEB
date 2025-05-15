@@ -29,11 +29,11 @@ export default function CartPage() {
   return (
     <div className="min-h-screen bg-rose-50">
       <RomanticNavbar />
-      
+
       <main className="py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl font-bold text-rose-800 mb-8">Your Sweet Cart</h1>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
               <div className="bg-white rounded-xl shadow-md p-6">
@@ -74,7 +74,7 @@ export default function CartPage() {
                     </div>
                   ))}
                 </div>
-                
+
                 <div className="mt-6 pt-6 border-t border-rose-100">
                   <div className="flex justify-between items-center">
                     <p className="text-rose-700">Punya kode kupon?</p>
@@ -85,7 +85,7 @@ export default function CartPage() {
                 </div>
               </div>
             </div>
-            
+
             <div>
               <div className="bg-white rounded-xl shadow-md p-6 sticky top-4">
                 <h2 className="text-xl font-bold text-rose-800 mb-4">Pesanan</h2>
@@ -108,8 +108,8 @@ export default function CartPage() {
                 </RomanticButton>
                 <div className="mt-4 text-center">
                   <p className="text-sm text-rose-500">or</p>
-                  <a 
-                    href="/main/products" 
+                  <a
+                    href="/main/products"
                     className="inline-block mt-2 text-rose-600 hover:text-rose-800 font-medium"
                   >
                     Lanjutkan Belanja

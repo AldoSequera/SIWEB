@@ -7,11 +7,11 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-rose-50">
       <RomanticNavbar />
-      
+
       <main className="py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold text-rose-800 mb-8 text-center">Pesan Manis</h1>
-          
+
           <div className="bg-white rounded-xl shadow-md p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div>
@@ -46,7 +46,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="mt-8">
                   <h3 className="text-xl font-semibold text-rose-700 mb-4">Jam Buka</h3>
                   <ul className="space-y-2 text-rose-600">
@@ -65,24 +65,24 @@ export default function ContactPage() {
                   </ul>
                 </div>
               </div>
-              
+
               <div>
                 <h2 className="text-2xl font-bold text-rose-700 mb-4">Kirimkan Pesan Kepada Kami</h2>
                 <form className="space-y-4">
-                  <LoveInput 
-                    label="Nama Anda" 
-                    type="text" 
-                    placeholder="Masukkan nama Anda" 
+                  <LoveInput
+                    label="Nama Anda"
+                    type="text"
+                    placeholder="Masukkan nama Anda"
                   />
-                  <LoveInput 
-                    label="Email Anda" 
-                    type="email" 
-                    placeholder="Masukkan email Anda" 
+                  <LoveInput
+                    label="Email Anda"
+                    type="email"
+                    placeholder="Masukkan email Anda"
                   />
                   <div>
                     <label className="block text-rose-700 mb-1">Pesan Anda</label>
-                    <textarea 
-                      className="w-full p-3 border border-rose-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500" 
+                    <textarea
+                      className="w-full p-3 border border-rose-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500"
                       rows={5}
                       placeholder="Tulis pesan manis Anda di sini..."
                     ></textarea>
@@ -93,16 +93,16 @@ export default function ContactPage() {
                 </form>
               </div>
             </div>
-            
+
             <div className="mt-8">
               <h2 className="text-2xl font-bold text-rose-700 mb-4">Temukan Kami</h2>
               <div className="bg-rose-100 h-64 rounded-lg flex items-center justify-center">
                 {/* Menambahkan Google Maps iframe */}
-                <iframe 
+                <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3475590362325!2d106.81093255115678!3d-6.160872388369535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3c02d37b2db%3A0x2b6b5c9b02eeb847!2s123%20Love%20Lane%2C%20Romance%20City!5e0!3m2!1sen!2sid!4v1634568797781!5m2!1sen!2sid"
-                  width="100%" 
-                  height="100%" 
-                  frameBorder="0" 
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
                   style={{ border: 0 }}
                   aria-hidden="false"
                   title="Lokasi Sweet Love Bakery"

@@ -7,11 +7,11 @@ export default function ProductsPage() {
   return (
     <div className="min-h-screen bg-rose-50">
       <RomanticNavbar />
-      
+
       <main className="py-12 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl font-bold text-rose-800 mb-8 text-center">Koleksi Kue Romantis Kami</h1>
-          
+
           <div className="mb-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="w-full md:w-1/2">
               <input
@@ -30,7 +30,7 @@ export default function ProductsPage() {
               </select>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {allProducts.map(product => (
               <ProductCard key={product.id} product={product} />

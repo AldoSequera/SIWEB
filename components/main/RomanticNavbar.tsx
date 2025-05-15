@@ -9,10 +9,10 @@ export default function RomanticNavbar() {
         <div className="flex justify-between h-20 items-center">
           <div className="flex items-center">
             <Link href="/main/home" className="flex items-center">
-              <Image 
-                src="/images/logo.png" 
-                alt="Sweet Love Bakery" 
-                width={75} 
+              <Image
+                src="/images/logo.png"
+                alt="Sweet Love Bakery"
+                width={75}
                 height={75}
                 className="rounded-full"
               />
@@ -22,27 +22,27 @@ export default function RomanticNavbar() {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-6">  
-            <Link 
-              href="/main/home"  
-              className="px-4 py-2 rounded-md text-lg font-medium text-rose-700 hover:bg-rose-50 hover:text-rose-900" 
+          <div className="hidden md:flex items-center space-x-6">
+            <Link
+              href="/main/home"
+              className="px-4 py-2 rounded-md text-lg font-medium text-rose-700 hover:bg-rose-50 hover:text-rose-900"
             >
               Home
             </Link>
-            <Link 
-              href="/main/products"  
-              className="px-4 py-2 rounded-md text-lg font-medium text-rose-700 hover:bg-rose-50 hover:text-rose-900" 
+            <Link
+              href="/main/products"
+              className="px-4 py-2 rounded-md text-lg font-medium text-rose-700 hover:bg-rose-50 hover:text-rose-900"
             >
               Product
             </Link>
-            <Link 
-              href="/main/about"  
-              className="px-4 py-2 rounded-md text-lg font-medium text-rose-700 hover:bg-rose-50 hover:text-rose-900" 
+            <Link
+              href="/main/about"
+              className="px-4 py-2 rounded-md text-lg font-medium text-rose-700 hover:bg-rose-50 hover:text-rose-900"
             >
               Abaut Us
             </Link>
-            <Link 
-              href="/main/contact"   
+            <Link
+              href="/main/contact"
               className="px-4 py-2 rounded-md text-lg font-medium text-rose-700 hover:bg-rose-50 hover:text-rose-900"
             >
               Contact
@@ -50,8 +50,8 @@ export default function RomanticNavbar() {
           </div>
 
           <div className="flex items-center space-x-4">
-            <Link 
-              href="/main/cart" 
+            <Link
+              href="/main/cart"
               className="p-1 rounded-full text-rose-700 hover:text-rose-900 relative"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -62,8 +62,8 @@ export default function RomanticNavbar() {
               </span>
             </Link>
 
-            <Link 
-              href="/auth/login"  
+            <Link
+              href="/auth/login"
               className="px-4 py-2 rounded-full bg-gradient-to-r from-rose-400 to-pink-500 text-white text-sm font-medium hover:from-rose-500 hover:to-pink-600 transition duration-300"
             >
               Masuk

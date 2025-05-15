@@ -2,13 +2,13 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { 
-  FaHome, 
-  FaBirthdayCake, 
-  FaShoppingCart, 
-  FaUsers, 
+import {
+  FaHome,
+  FaBirthdayCake,
+  FaShoppingCart,
+  FaUsers,
   FaCog,
-  FaSignOutAlt 
+  FaSignOutAlt
 } from 'react-icons/fa';
 
 export default function AdminSidebar() {
@@ -34,7 +34,7 @@ export default function AdminSidebar() {
                 <FaHome className={`mr-3 flex-shrink-0 ${isActive('dashboard') ? 'text-white' : 'text-rose-300'}`} />
                 Dashboard
               </Link>
-              
+
               <Link
                 href="/admin/products"
                 className={`group flex items-center px-2 py-2 text-sm font-medium rounded-md ${isActive('products') ? 'bg-rose-900 text-white' : 'text-rose-200 hover:bg-rose-700 hover:text-white'}`}
@@ -42,7 +42,7 @@ export default function AdminSidebar() {
                 <FaBirthdayCake className={`mr-3 flex-shrink-0 ${isActive('products') ? 'text-white' : 'text-rose-300'}`} />
                 Products
               </Link>
-              
+
               <Link
                 href="/admin/orders"
                 className={`group flex items-center px-2 py-2 text-sm font-medium rounded-md ${isActive('orders') ? 'bg-rose-900 text-white' : 'text-rose-200 hover:bg-rose-700 hover:text-white'}`}

@@ -49,7 +49,7 @@ export default function ForgotPasswordPage() {
 
         <div className="mt-6 text-center">
           <p className="text-sm text-rose-600">
-          Ingat kata sandi Anda?{' '}
+            Ingat kata sandi Anda?{' '}
             <a href="/auth/login" className="font-medium text-rose-600 hover:text-rose-500">
               Masuk di sini
             </a>

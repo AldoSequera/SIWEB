@@ -5,10 +5,10 @@ interface LoveInputProps extends InputHTMLAttributes<HTMLInputElement> {
   fullWidth?: boolean;
 }
 
-export default function LoveInput({ 
-  label, 
-  fullWidth = false, 
-  ...props 
+export default function LoveInput({
+  label,
+  fullWidth = false,
+  ...props
 }: LoveInputProps) {
   return (
     <div className={fullWidth ? 'w-full' : ''}>

@@ -70,11 +70,11 @@ export default function RomanticButton({
       tap: { scale: 0.95 },
     },
     float: {
-      hover: { 
+      hover: {
         y: -3,
-        transition: { 
+        transition: {
           y: { duration: 0.3, repeat: Infinity, repeatType: "reverse", ease: "easeOut" }
-        } 
+        }
       },
       tap: { y: 0 }
     },

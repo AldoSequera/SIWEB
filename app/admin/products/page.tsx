@@ -52,7 +52,7 @@ export default function AdminProductsPage() {
                     <button className="text-rose-600 hover:text-rose-800 mr-4">
                       <FaEdit />
                     </button>
-                    <button 
+                    <button
                       className="text-rose-600 hover:text-rose-800"
                       onClick={() => handleDelete(product.id)}
                     >

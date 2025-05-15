@@ -29,17 +29,17 @@ export default function ProductCard({ product }: { product: Product }) {
   const toggleFavorite = () => {
     setIsFavorite(!isFavorite);
   };
-  
+
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 relative group">
-      <div className="relative h-64 w-full"> 
-        <Image 
-          src={product.image} 
+      <div className="relative h-64 w-full">
+        <Image
+          src={product.image}
           alt={product.name}
-          layout="fill" 
-          className="object-cover" 
+          layout="fill"
+          className="object-cover"
         />
-        
+
         <div className="absolute top-2 left-2 flex gap-2">
           {product.isNew && (
             <span className="bg-rose-600 text-white text-xs font-bold px-2 py-1 rounded-full">
@@ -52,8 +52,8 @@ export default function ProductCard({ product }: { product: Product }) {
             </span>
           )}
         </div>
-        
-        <button 
+
+        <button
           onClick={toggleFavorite}
           aria-label={isFavorite ? 'Hapus dari favorit' : 'Tambahkan ke favorit'}
           className={`absolute top-2 right-2 p-2 rounded-full transition-all 
@@ -62,11 +62,11 @@ export default function ProductCard({ product }: { product: Product }) {
           <FaHeart />
         </button>
 
-        
+
         <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 p-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <RomanticButton 
-            size="sm" 
-            fullWidth 
+          <RomanticButton
+            size="sm"
+            fullWidth
             icon="cart"
             animate="pulse"
           >
@@ -74,24 +74,24 @@ export default function ProductCard({ product }: { product: Product }) {
           </RomanticButton>
         </div>
       </div>
-      
+
       <div className="p-6">
         <div className="flex justify-between items-start mb-2">
           <h3 className="text-xl font-bold text-rose-900">{product.name}</h3>
           <span className="text-lg font-bold text-rose-600">Rp {product.price.toFixed(2)}</span>
         </div>
-        
+
         <p className="text-gray-600 mb-4 line-clamp-2">{product.description}</p>
-        
+
         <div className="flex justify-between items-center">
           {product.size && (
             <span className="text-sm text-gray-500 bg-rose-50 px-2 py-1 rounded">
               {product.size}
             </span>
           )}
-          
-          <RomanticButton 
-            variant="outline" 
+
+          <RomanticButton
+            variant="outline"
             size="sm"
             icon="arrow"
           >
